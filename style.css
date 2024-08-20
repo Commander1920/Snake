@@ -1,0 +1,146 @@
+*{
+    padding:0;
+    margin:0;
+}
+.body
+{
+    background:url("bgmainmenu.png");
+    min-height: 100vh;
+    background-size:100vw 100vh;
+    display:flex;
+    justify-content:center;
+    align-items:top;
+
+}
+#GameBoard
+{
+    background:url("Background.png");
+    width:22.5em;
+    height:22.5em;
+    background-size:100% 100%;
+    border:2.5px solid rgb(229, 229, 229);
+    border-radius: 5px;
+    display:grid;
+    grid-template-rows: repeat(25,1fr);
+    grid-template-columns: repeat(25,1fr);
+    margin-top:7.5em;
+}
+#Score
+{
+    border:0.1em solid rgb(229, 229, 229);
+    color: rgb(229, 229, 229);
+    border-radius: 0.2em;
+    background:url("bgmainmenu.png");
+    padding: 0.25em;
+    position: absolute;
+    display:flex;
+    top: 1.5em;
+    right: 0.25em;
+    font-size: 2em;
+    user-select: none;
+}
+.gamepad
+{
+    width:9em;
+    height:9em;
+    background:url("bgmainmenu.png");
+    position: absolute;
+    bottom: 2em;
+    border:0.25em solid rgb(227, 227, 227);
+    border-radius: 1em;
+    box-shadow:0em 0em 0.05em 0.05em rgb(162, 162, 162);
+}
+#up
+{
+    position: absolute;
+    top:0.1em;
+    left:33.33%;
+}
+#down
+{
+    position: absolute;
+    bottom:0.1em;
+    left:33.33%;
+}
+#left
+{
+    position: absolute;
+    left:0.1em;
+    top:33.33%;
+    
+}
+#right
+{
+    position: absolute;
+    right:0.1em;
+    top:33.33%;
+}
+.button
+{
+background:url("bgmainmenu.png");
+color: rgb(229, 229, 229);
+border-radius: 0.25em;
+border:0.1em solid rgb(236, 236, 236);
+font-size: 25px;
+width:1.9em;
+height:1.9em;
+user-select: none;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+}
+.button:hover
+{
+    background:url("bgmainmenu.png");
+    border-color: rgb(15, 124, 21);
+    color: rgb(21, 144, 28) ;
+    box-shadow: 0em 0em 0.05em 0.05em rgb(162, 162, 162);
+}
+.snakehead {
+    background: rgb(255, 102, 0);
+    border-radius: 5px;
+    border: 1.5px solid rgb(204, 85, 0);
+    scale: 1.25;
+}
+
+.snakebody {
+    background: rgb(255, 140, 0);
+    border-radius: 5px;
+    border: 1.5px solid rgb(230, 115, 0);
+}
+
+.food {
+    background: rgb(255, 0, 0);
+    border-radius: 50%;
+    border: 1px solid rgb(200, 0, 0);
+}
+
+
+#up img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+#down img
+{
+    width: 100%;
+    height:100%;
+    object-fit: contain;
+    transform: rotate(180deg);
+}
+#left img
+{
+    width: 100%;
+    height:100%;
+    object-fit: contain;
+    transform: rotate(270deg);
+}
+#right img
+{
+    width: 100%;
+    height:100%;
+    object-fit: contain;
+    transform: rotate(90deg);
+}
